@@ -17,9 +17,11 @@ public class Tree2 extends MapObject {
     
     public Tree2() {
         super();
+        int rverde = _rand.nextInt(150)+100;
         setSymbol(SymbolsMirk.TREES[_rand.nextInt(SymbolsMirk.TREES.length)]);
-        setForegroundColor(new TextColor.RGB(51, 204, 51));
+        setForegroundColor(new TextColor.RGB(0,rverde, 0));     
         setBackgroundColor(Map.bkgColor);
+        setWalkthrough(true);
     }
     
 }

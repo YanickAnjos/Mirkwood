@@ -17,9 +17,11 @@ public class MapObject {
     char symbol;
     TextColor.RGB foregroundColor;
     TextColor.RGB backgroundColor;
-    
-    Random _rand;
-    
+    boolean walkthrough = true;
+   
+    protected Random _rand;
+
+  
     public MapObject() {
         _rand = new Random();
     }
@@ -29,7 +31,14 @@ public class MapObject {
         this.foregroundColor = foregroundColor;
         this.backgroundColor = backgroundColor;
     }
+  public boolean isWalkthrough() {
+        return walkthrough;
+    }
 
+    public void setWalkthrough(boolean walkthrough) {
+        this.walkthrough = walkthrough;
+    }
+    
     public char getSymbol() {
         return symbol;
     }

@@ -25,6 +25,7 @@ public class LayerTrees extends MapLayer {
     	public void generateTrees() {
             for (int i=0; i < TREECOUNT; i++)
 		this.objectos[_rand.nextInt(COLUMNS)][_rand.nextInt(LINES)] = new Tree2();
+                
 
 	}
 }
